@@ -1,6 +1,6 @@
 #__Author__ Mohammed Sefath Chowdhury
 
-Confornmed CAD set file tree explanation:
+Conformed CAD set file tree explanation:
 # Current Directory //NYJOB900360/Common/4500 VDC/4510 VDC Documents/4510.05 CAD Files/
  - *20170609 Bulletin 10 Conformed CAD set*
    (Latest approved Conformed CAD)
@@ -54,19 +54,3 @@ While CADAutomator is running, any new files that appear in the running director
 COMMAND  is the command file
 
 DEST     is the directory to move each initial .dwg file after MotionCor2 finishes processing it. A new folder will be created if DEST does not already exist.
-
-### Command file syntax:
-
-The syntax is sh shell with a few differences. Multiple lines are joined together with spaces. To add comments, use *#* as the first non-whitespace character of a line.
-
-  - (filename)  is replaced with a discovered dwg file. e.g. *A-211 - OVERALL BUILDING SECTIONS.dwg*
-
-  - (basename)  is the same as (filename) without the extension. e.g. *A-211 - OVERALL BUILDING SECTIONS*
-
-  - (dest)      is replaced with the --dest argument in the moviewatcher command. e.g. *done_folder*
-
-
-### Tips
-  - If you just want to automatically move the originial data without processing, don't use --command.
-  - The MotionCor2 output files don't have to go in the same folder as the DEST folder for the original data.
-  - You can use other programs to align such as Unblur and alignframes.
